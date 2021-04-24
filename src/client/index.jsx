@@ -26,7 +26,7 @@ function ChatApplication() {
 
     return (
         <ChatView
-            chatLog={chatLog} sendMessage={message => ws.send(message)}
+            chatLog={chatLog} onSendMessage={message => ws.send(message)}
         />
     );
 }
